@@ -1,2 +1,2 @@
-"# Pamo2022" 
-"# Pamo2022" 
+Calculator BMI
+Author: Wojciech Szypelt s14578
