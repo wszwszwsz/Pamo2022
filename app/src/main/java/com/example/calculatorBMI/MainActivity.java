@@ -7,35 +7,33 @@ package com.example.calculatorBMI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
+    private Button activity2;
 
-    EditText weight, height;
-    TextView result;
-    String calculation, BMIresult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        weight = findViewById(R.id.weight);
-        height = findViewById(R.id.height);
-        result = findViewById(R.id.result);
+        activity2 = (Button) findViewById(R.id.button);
+
+        activity2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity2();
+            }
+        });
+    }
+    public void openActivity2(){
+        Intent intent = new Intent(this, Activity2.class);
+        startActivity(intent);
     }
 
-    public void calculateBMI(View view) {
-        String heightStr = height.getText().toString();
-        String weightStr = weight.getText().toString();
-        float heightValue = Float.parseFloat(heightStr) / 100;
-        float weightValue = Float.parseFloat(weightStr);
-        float bmi = weightValue / (heightValue * heightValue);
-        calculation = "Twoje bmi = " + bmi;
-        result.setText(calculation);
-    }
 }
-
