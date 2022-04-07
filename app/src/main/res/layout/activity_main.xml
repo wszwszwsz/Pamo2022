@@ -9,18 +9,30 @@
     android:background="@drawable/burger"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Witamy w kalkulatorze BMI!"
-        />
-
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginVertical="10dp"
-        android:text="Oblicz swoje BMI!" />
+        android:text="Oblicz swoje BMI!"
+        />
+
+    <Button
+        android:id="@+id/quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="10dp"
+        android:text="Zapraszamy do quizu z koronawirusa"
+        />
+    <Button
+        android:id="@+id/graphs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="10dp"
+        android:text="Wykres"
+        />
 
 </LinearLayout>
