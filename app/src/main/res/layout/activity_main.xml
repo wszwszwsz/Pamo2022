@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginVertical="10dp"
-        android:text="Zapraszamy do quizu z koronawirusa"
+        android:text="Zapraszamy do quizu z zdrowego jedzenia"
         />
     <Button
         android:id="@+id/graphs"
