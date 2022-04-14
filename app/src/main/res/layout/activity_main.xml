@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginVertical="10dp"
-        android:text="Oblicz swoje BMI!"
+        android:text="Oblicz swoje BMI!!"
         />
 
     <Button
